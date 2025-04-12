@@ -1,0 +1,87 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+
+# AWS credentials
+.aws/
+aws_config.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for instrumented libs
+coverage/
+.nyc_output/
+
+# Build files
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Cache
+.cache/
+.turbo/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+
+# Debugger files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+test-results/
+
+# Secrets
+secrets.json
+*.pem
+*.key
+*.crt
+
+# Editor files
+.DS_Store
+Thumbs.db
+
+# Serverless
+.serverless/
+.aws-sam/
+
+# Database
+*.db
+*.sqlite
+dump.rdb
+
+# OS files
+ehthumbs.db
+Icon?
+._*
+
+# Package manager specific
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# TypeScript
+*.tsbuildinfo
