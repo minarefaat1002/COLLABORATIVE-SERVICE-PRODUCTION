@@ -33,7 +33,7 @@ app.use(morgan("combined", { stream: logger.stream })); // Log HTTP requests
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP to 100 requests per windowMs
+  max: 300, // Limit each IP to 100 requests per windowMs
 });
 app.get("/health", (req, res) => {
   res.status(200).json({ status: "OK" });
@@ -46,7 +46,7 @@ const server = http.createServer(app);
 const jwt = require("jsonwebtoken");
 const io = socketIoServer(server, {
   cors: corsOptions,
-  path: "/socket",
+  path: "/api/socket",
 });
 
 io.use((socket, next) => {
